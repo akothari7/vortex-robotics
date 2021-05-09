@@ -8,6 +8,7 @@ interface TypographyProps {
   text: string;
 }
 
+//Header component
 export const Header: React.FC<TypographyProps> = (props: TypographyProps) => {
   return <h1>{props.text}</h1>;
 };
