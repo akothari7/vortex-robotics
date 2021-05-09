@@ -1,11 +1,12 @@
-//Constants containing data for UI such as color, fonts, etc
+//Global Constants containing data for UI such as color, fonts, etc
 export enum UI_Constants {
   ACCENT = "#27A4FF",
-}
+  PURE_WHITE = "",
+  DARK_BLUE = "",
+  LIGHT_GREY = "",
+  BACKGROUND = "",
 
-export interface TypographyProps {
-  color: string;
-  size: number;
-  bold: boolean;
-  text: string;
+  //Hover colors
+  ACCENT_HOVER = "",
+  DARK_BLUE_HOVER = "",
 }
