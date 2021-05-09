@@ -1,9 +1,6 @@
 import { TypographyProps } from "../Constants";
+import React from "react";
 
-export const Header = ({ content, color }: TypographyProps) => {
-  return (
-    <div>
-      <h1 color={color}>{content}</h1>
-    </div>
-  );
+export const Header: React.FC<TypographyProps> = (props: TypographyProps) => {
+  return <h1>{props.text}</h1>;
 };

@@ -3,8 +3,9 @@ export enum UI_Constants {
   ACCENT = "#27A4FF",
 }
 
-export type TypographyProps = {
-  content: string;
+export interface TypographyProps {
   color: string;
-  index: number;
-};
+  size: number;
+  bold: boolean;
+  text: string;
+}
