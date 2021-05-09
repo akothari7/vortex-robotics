@@ -13,21 +13,17 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
       <title>{title}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+        rel="stylesheet"
+      />
     </Head>
     <header>
       <nav>
         <Link href="/">
-          <a>Home</a>
+          <a> Home</a>
         </Link>{" "}
-        |{" "}
-        <Link href="/about">
-          <a>About</a>
-        </Link>{" "}
-        |{" "}
-        <Link href="/users">
-          <a>Users List</a>
-        </Link>{" "}
-        | <a href="/api/users">Users API</a>
       </nav>
     </header>
     {children}
