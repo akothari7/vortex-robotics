@@ -5,7 +5,7 @@ export const Navbar = () => {
     <div>
       <div className="nav">
         <a href="/">Home</a>
-        <a href="/">About Us</a>
+        <a href="/about">About Us</a>
         <a href="/">Apply</a>
         <a href="/">Outreach</a>
         <a href="/">Donors</a>

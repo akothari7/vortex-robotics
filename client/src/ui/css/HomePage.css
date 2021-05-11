@@ -1,0 +1,76 @@
+.content {
+  text-align: center;
+  padding-bottom: 10rem;
+}
+
+.title {
+  font-weight: bolder;
+  position: relative;
+  font-size: 5rem;
+  bottom: 50px;
+}
+
+.ftc {
+  color: var(--ACCENT);
+  position: relative;
+  bottom: 80px;
+}
+
+.downarrow {
+  position: relative;
+  bottom: 90px;
+}
+
+.home_p {
+  padding: 1px 6rem;
+  font-size: 20px;
+}
+
+.more_info,
+.more_info a {
+  color: var(--ACCENT);
+}
+
+#who_are_we {
+  font-size: 3.5rem;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-child {
+  flex: 1;
+  border: 2px solid var(--ACCENT);
+}
+
+.frame {
+  border: none;
+}
+
+.flex-child:first-child {
+  margin-right: 20px;
+}
+
+.challenge_text {
+  font-size: 40px;
+}
+
+.challenge_2 {
+  position: relative;
+  top: 100px;
+}
+
+.hr {
+  width: 80%;
+}
+
+.main {
+  position: relative;
+  top: 40px;
+}
+
+.challenge_container {
+  position: relative;
+  top: 80px;
+}
