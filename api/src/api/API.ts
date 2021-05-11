@@ -61,7 +61,7 @@ export class API {
     });
 
     this.app.get("/admin", isAdmin, (req, res) => {
-      res.send("hello admin");
+      res.redirect("http://localhost:3000/admin");
     });
 
     this.app.use("/api", AuthRoutes);

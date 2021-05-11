@@ -59,5 +59,5 @@ auth.get("/auth/github/success", (req, res) => {
 //log out user by destroying session
 auth.get("/auth/logout", (req, res) => {
   req.session = null;
-  res.redirect(`/`);
+  res.redirect(`${clientURL}`);
 });
