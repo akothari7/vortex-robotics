@@ -9,12 +9,16 @@ const App = () => {
     <div>
       <Router>
         <Switch>
-          <Route path="/about">
+          <Route exact path="/about">
             <AboutPage />
           </Route>
-          <Route path="/">
+          <Route exact path="/admin" component={() => <h1>admin</h1>} />
+
+          <Route exact path="/">
             <HomePage />
           </Route>
+
+          <Route component={() => <h1>404</h1>} />
         </Switch>
       </Router>
     </div>
