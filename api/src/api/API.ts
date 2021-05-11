@@ -1,5 +1,6 @@
 //Import routes
 import { auth as AuthRoutes } from "./routes/Auth";
+import { isAdmin } from "./middlewares/isAdmin";
 import express, { Request, Response, NextFunction } from "express";
 import cookieSession from "cookie-session";
 import cors from "cors";
@@ -59,12 +60,8 @@ export class API {
       res.json({ success: true, message: "Vortex Robotics API version 1" });
     });
 
-    this.app.get("/admin", (req, res) => {
-      if (req.session && req.session!.githubID == 68178572) {
-        res.send(`Hello admin`);
-      } else {
-        res.redirect("/");
-      }
+    this.app.get("/admin", isAdmin, (req, res) => {
+      res.send("hello admin");
     });
 
     this.app.use("/api", AuthRoutes);
