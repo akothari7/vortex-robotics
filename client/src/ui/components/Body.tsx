@@ -6,12 +6,20 @@ export const Body = () => {
   return (
     <div className="content">
       <div>
-        <img src={logo}></img>
-        <h1>Vortex Robotics</h1>
-        <h2>FTC 14969</h2>
+        <div className="container">
+          <img
+            loading="lazy"
+            src={logo}
+            className="img"
+            alt="Vortex Robotics"
+          ></img>
+        </div>
+        <h1 className="title">Vortex Robotics</h1>
+        <h2 className="ftc">FTC 14969</h2>
+        <a href="#who_are_we">down</a>
       </div>
       <div>
-        <h2>Who Are We?</h2>
+        <h2 id="who_are_we">Who Are We?</h2>
         <p>{homepageParagraph}</p>
         <p>
           For more information on FIRST and FTC, visit the official FIRST

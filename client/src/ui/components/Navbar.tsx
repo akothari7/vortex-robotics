@@ -11,6 +11,9 @@ export const Navbar = () => {
         <a href="/">Donors</a>
         <a href="/">Achievements</a>
         <a href="/">Contact Us</a>
+        <a href="/" id="github">
+          Login with GitHub
+        </a>
       </div>
     </div>
   );
