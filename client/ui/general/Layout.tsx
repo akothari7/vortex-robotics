@@ -1,5 +1,4 @@
 import React, { ReactNode } from "react";
-import Link from "next/link";
 import Head from "next/head";
 
 interface LayoutProps {
@@ -23,18 +22,7 @@ const Layout = ({
         rel="stylesheet"
       />
     </Head>
-    <header>
-      <nav>
-        <Link href="/">
-          <a> Home</a>
-        </Link>{" "}
-      </nav>
-    </header>
     {children}
-    <footer>
-      <hr />
-      <span>I'm here to stay (Footer)</span>
-    </footer>
   </div>
 );
 

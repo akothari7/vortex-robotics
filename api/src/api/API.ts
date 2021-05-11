@@ -34,7 +34,7 @@ export class API {
     this.app.use(express.urlencoded({ extended: true }));
     this.app.use(
       cookieSession({
-        secret: "secret",
+        secret: process.env.COOKIE_SECRET,
       })
     );
   }

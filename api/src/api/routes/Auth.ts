@@ -1,9 +1,10 @@
 import { Router } from "express";
 import axios from "axios";
-export const auth = Router();
 
-const clientID = "Iv1.4c7c614fb4d6ce13";
-const clientSecret = "712abb78af331e2e52ba5ab52bf6270d3a87ac4a";
+export const auth = Router();
+const clientID = process.env.GITHUB_CLIENT_ID;
+const clientSecret = process.env.GITHUB_CLIENT_SECRET;
+const clientURL = "http://localhost:3000";
 let accessToken: string;
 
 //authenticate a user using github
@@ -47,7 +48,8 @@ auth.get("/auth/github/success", (req, res) => {
       req.session!.githubID = data.id;
       req.session!.token = accessToken;
 
-      res.redirect("/admin");
+      //redirect to client UI
+      res.redirect(`${clientURL}/admin`);
     } else {
       console.log(`An error happened with setting the cookie`);
     }
@@ -57,5 +59,5 @@ auth.get("/auth/github/success", (req, res) => {
 //log out user by destroying session
 auth.get("/auth/logout", (req, res) => {
   req.session = null;
-  res.redirect("/");
+  res.redirect("");
 });

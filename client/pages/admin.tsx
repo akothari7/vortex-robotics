@@ -4,7 +4,7 @@ import { Header } from "../ui/typography/Header";
 
 const IndexPage = () => (
   <Layout title="Vortex Robotics | Home">
-    <h1>index</h1>
+    <Header color="" size={1} bold={true} text="admin" />
   </Layout>
 );
 
