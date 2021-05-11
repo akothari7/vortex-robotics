@@ -1,18 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
 .nav {
-  background-color: #2d6cbf;
+  background-color: var(--DARK_BLUE);
   overflow: hidden;
 }
 
 .nav a {
   float: left;
-  color: #f2f2f2;
+  color: var(--PURE_WHITE);
   text-align: center;
   padding: 25px 63px;
   text-decoration: none;
@@ -21,5 +14,5 @@ body {
 }
 
 .nav a:hover {
-  color: #27a4ff;
+  color: var(--ACCENT);
 }

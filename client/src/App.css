@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --DARK_BLUE: #2d6cbf;
+  --ACCENT: #27a4ff;
+  --PURE_WHITE: #ffffff;
+}
