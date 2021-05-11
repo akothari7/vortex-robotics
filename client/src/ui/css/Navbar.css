@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  background-color: #2d6cbf;
+  overflow: hidden;
+}
+
+.nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 25px 63px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: Montserrat;
+}
+
+.nav a:hover {
+  color: #27a4ff;
+}

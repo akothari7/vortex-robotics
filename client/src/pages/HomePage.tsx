@@ -1,7 +1,9 @@
+import { Navbar } from "../ui/components/Navbar";
+
 export const HomePage = () => {
   return (
     <div>
-      <h1>Homepage</h1>
+      <Navbar />
     </div>
   );
 };
