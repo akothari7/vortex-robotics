@@ -11,11 +11,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.21.1",
     "consola": "^2.15.3",
+    "cookie-session": "^1.4.0",
     "express": "^4.17.1",
     "prisma": "^2.22.1"
   },
   "devDependencies": {
+    "@types/cookie-session": "^2.0.42",
     "@types/express": "^4.17.11"
   }
 }

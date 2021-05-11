@@ -1,4 +1,7 @@
+//Import routes
+import { auth as AuthRoutes } from "./routes/Auth";
 import express, { Request, Response, NextFunction } from "express";
+import cookieSession from "cookie-session";
 import consola, { Consola } from "consola";
 
 //API class
@@ -29,6 +32,11 @@ export class API {
   private setConfig() {
     this.app.use(express.json());
     this.app.use(express.urlencoded({ extended: true }));
+    this.app.use(
+      cookieSession({
+        secret: "secret",
+      })
+    );
   }
 
   //Set up request logger
@@ -43,7 +51,16 @@ export class API {
   //Define routes
   private setRoutes() {
     this.app.get("/", (req: Request, res: Response) => {
-      res.send({ success: true, message: "Vortex Robotics API version 1" });
+      res.json({ success: true, message: "Vortex Robotics API version 1" });
     });
+
+    this.app.get("/admin", (req, res) => {
+      if (req.session!.githubID == 68178572) {
+        res.send("Hello Admin <pre>" + JSON.stringify(req.session, null, 2));
+      } else {
+        res.redirect("/");
+      }
+    });
+    this.app.use("/api", AuthRoutes);
   }
 }
