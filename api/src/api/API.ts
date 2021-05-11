@@ -2,6 +2,8 @@
 import { auth as AuthRoutes } from "./routes/Auth";
 import express, { Request, Response, NextFunction } from "express";
 import cookieSession from "cookie-session";
+import cors from "cors";
+import dotenv from "dotenv";
 import consola, { Consola } from "consola";
 
 //API class
@@ -22,6 +24,7 @@ export class API {
     this.setConfig();
     this.setRequestLogger();
     this.setRoutes();
+    dotenv.config();
 
     this.app.listen(this.PORT, () => {
       this.logger.success(`Vortex Robotics API started on port ${this.PORT}`);
@@ -32,9 +35,11 @@ export class API {
   private setConfig() {
     this.app.use(express.json());
     this.app.use(express.urlencoded({ extended: true }));
+    this.app.use(cors());
     this.app.use(
       cookieSession({
         secret: process.env.COOKIE_SECRET,
+        keys: ["key1", "key2"],
       })
     );
   }
@@ -55,12 +60,13 @@ export class API {
     });
 
     this.app.get("/admin", (req, res) => {
-      if (req.session!.githubID == 68178572) {
-        res.send("Hello Admin <pre>" + JSON.stringify(req.session, null, 2));
+      if (req.session && req.session!.githubID == 68178572) {
+        res.send(`Hello admin`);
       } else {
         res.redirect("/");
       }
     });
+
     this.app.use("/api", AuthRoutes);
   }
 }
