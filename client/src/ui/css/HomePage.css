@@ -35,14 +35,14 @@
   font-size: 3.5rem;
 }
 
-.flex-container {
+/* .flex-container {
   display: flex;
 }
 
 .flex-child {
   flex: 1;
   border: 2px solid var(--ACCENT);
-}
+} */
 
 .frame {
   border: none;

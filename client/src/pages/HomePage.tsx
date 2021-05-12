@@ -1,6 +1,7 @@
 import "../ui/css/HomePage.css";
 import { Navbar } from "../ui/components/Navbar";
 import { Footer } from "../ui/components/Footer";
+import { FlexContainer } from "../ui/components/FlexContainer";
 import { HomePageParagraph } from "../utils/Paragraphs";
 import logo from "../assets/logo.png";
 import downArrow from "../assets/down_arrow.png";
@@ -62,19 +63,17 @@ export const HomePage = () => {
                 <h2 className="challenge_text">FY19-20 Challenge</h2>
               </Roll>
               <Fade>
-                <div className="flex-container">
-                  <div className="flex-child">
-                    <img src={skystone} alt="Skystone" width="500" />
-                  </div>
-                  <div className="flex-child">
+                <FlexContainer
+                  child1={<img src={skystone} alt="Skystone" width="500" />}
+                  child2={
                     <iframe
                       className="frame"
                       width="710"
                       height="428"
                       src="https://www.youtube.com/embed/XiGB_8Ppnbs"
                     ></iframe>
-                  </div>
-                </div>
+                  }
+                />
               </Fade>
             </div>
           </div>
@@ -84,19 +83,19 @@ export const HomePage = () => {
               <h2 className="challenge_text">FY18-19 Challenge</h2>
             </Roll>
             <Fade>
-              <div className="flex-container">
-                <div className="flex-child">
+              <FlexContainer
+                child1={
                   <img src={rover_ruckus} alt="Rover Ruckus" width="500" />
-                </div>
-                <div className="flex-child">
+                }
+                child2={
                   <iframe
                     className="frame"
                     width="710"
                     height="428"
                     src="https://www.youtube.com/embed/rR4gR4l2XA8"
                   ></iframe>
-                </div>
-              </div>
+                }
+              />
             </Fade>
           </div>
         </div>
