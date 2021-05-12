@@ -1,6 +1,7 @@
 import { HomePage } from "./pages/HomePage";
 import { AboutPage } from "./pages/AboutPage";
 import { OutreachPage } from "./pages/OutreachPage";
+import { SponsorPage } from "./pages/SponsorPage";
 
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -15,6 +16,9 @@ const App = () => {
           </Route>
           <Route exact path="/outreach">
             <OutreachPage />
+          </Route>
+          <Route exact path="/sponsors">
+            <SponsorPage />
           </Route>
           <Route exact path="/">
             <HomePage />
