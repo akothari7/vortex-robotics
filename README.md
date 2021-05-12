@@ -1,1 +1,1 @@
-# Vortex Robotics Website Redesign (Assignment)
+# Vortex Robotics Website Design Assignment

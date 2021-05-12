@@ -10,9 +10,6 @@ export const Navbar = () => {
         <a href="/">Donors</a>
         <a href="/">Achievements</a>
         <a href="/">Contact Us</a>
-        <a href="http://localhost:4000/api/auth/github" id="github">
-          Login with GitHub
-        </a>
       </div>
     </div>
   );

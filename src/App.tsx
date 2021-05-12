@@ -11,12 +11,9 @@ const App = () => {
           <Route exact path="/about">
             <AboutPage />
           </Route>
-          <Route exact path="/admin" component={() => <div>admin</div>} />
-
           <Route exact path="/">
             <HomePage />
           </Route>
-
           <Route component={() => <h1>404</h1>} />
         </Switch>
       </Router>
