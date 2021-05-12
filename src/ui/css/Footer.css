@@ -1,24 +1,8 @@
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  margin: 0 0 100px;
-  padding: 30px;
-}
-
 footer {
   background-color: var(--DARK_BLUE);
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 40px;
-  width: 100%;
-  overflow: hidden;
+  padding: 15px;
   text-align: center;
 }
-
 .icons:hover {
   cursor: pointer;
 }

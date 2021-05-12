@@ -5,10 +5,15 @@ import {
   AiFillTwitterCircle,
   FaFacebook,
 } from "react-icons/all";
+import { CSSProperties } from "react";
 
-export const Footer = () => {
+interface FooterProps {
+  style?: CSSProperties;
+}
+
+export const Footer = (props: FooterProps) => {
   return (
-    <footer>
+    <footer style={props.style}>
       <Bounce>
         <p className="footer_p">
           Copyright &copy; Vortex Robotics 2021 |{" "}

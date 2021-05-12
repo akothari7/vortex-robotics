@@ -46,7 +46,6 @@ export const AboutPage = (): JSX.Element => {
           />
         </div>
       </div>
-      <Footer />
     </div>
   );
 };
