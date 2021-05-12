@@ -2,6 +2,22 @@ footer {
   background-color: var(--DARK_BLUE);
   padding: 15px;
   text-align: center;
+}
+
+.icons {
   position: relative;
-  top: 30px;
+  top: 5px;
+  font-size: 20px;
+}
+
+.icons:hover {
+  cursor: pointer;
+}
+
+#twitter {
+  left: 5px;
+}
+
+#facebook {
+  left: 10px;
 }
