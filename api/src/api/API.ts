@@ -1,5 +1,6 @@
 //Import routes
 import { auth as AuthRoutes } from "./routes/Auth";
+import { teamMember as TeamMemberRoutes } from "./routes/TeamMember";
 import { isAdmin } from "./middlewares/isAdmin";
 import express, { Request, Response, NextFunction } from "express";
 import cookieSession from "cookie-session";
@@ -64,6 +65,6 @@ export class API {
       res.redirect("http://localhost:3000/admin");
     });
 
-    this.app.use("/api", AuthRoutes);
+    this.app.use("/api", AuthRoutes, TeamMemberRoutes);
   }
 }
