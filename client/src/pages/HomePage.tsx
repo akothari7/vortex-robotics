@@ -1,7 +1,7 @@
 import "../ui/css/HomePage.css";
 import { Navbar } from "../ui/components/Navbar";
 import { Footer } from "../ui/components/Footer";
-import { homepageParagraph } from "../utils/Paragraphs";
+import { HomePageParagraph } from "../utils/Paragraphs";
 import logo from "../assets/logo.png";
 import downArrow from "../assets/down_arrow.png";
 import skystone from "../assets/skystone.png";
@@ -43,10 +43,7 @@ export const HomePage = () => {
         <div className="main">
           <Fade>
             <h1 id="who_are_we">Who Are We?</h1>
-          </Fade>
-
-          <Fade>
-            <p className="home_p">{homepageParagraph}</p>
+            <HomePageParagraph />
           </Fade>
           <p className="more_info">
             For more information on FIRST and FTC, visit{" "}
