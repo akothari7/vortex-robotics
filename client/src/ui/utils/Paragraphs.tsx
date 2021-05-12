@@ -15,3 +15,18 @@ export const HomePageParagraph = () => {
     </div>
   );
 };
+
+export const GoalsParagraph = () => {
+  return (
+    <div>
+      <p className="home_p">
+        We qualified to regionals in the past FY18-19 and FY19-20 seasons, and
+        hope to continue our qualifying streak this FY20-21 season, working hard
+        to possibly make it to Worlds. We are currently striving to spread STEM
+        to as many youth as possible within our Bay Area communities through
+        online camps. Additionally, we will be working hard over the summer to
+        implement new design ideas and train for the upcoming season.
+      </p>
+    </div>
+  );
+};

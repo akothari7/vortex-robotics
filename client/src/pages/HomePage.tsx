@@ -2,7 +2,7 @@ import "../ui/css/HomePage.css";
 import { Navbar } from "../ui/components/Navbar";
 import { Footer } from "../ui/components/Footer";
 import { FlexContainer } from "../ui/components/FlexContainer";
-import { HomePageParagraph } from "../utils/Paragraphs";
+import { HomePageParagraph } from "../ui/utils/Paragraphs";
 import logo from "../assets/logo.png";
 import downArrow from "../assets/down_arrow.png";
 import skystone from "../assets/skystone.png";
