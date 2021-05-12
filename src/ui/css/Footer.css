@@ -1,23 +1,24 @@
-footer {
-  background-color: var(--DARK_BLUE);
-  padding: 15px;
-  text-align: center;
+html {
+  position: relative;
+  min-height: 100%;
 }
 
-.icons {
-  position: relative;
-  top: 5px;
-  font-size: 20px;
+body {
+  margin: 0 0 100px;
+  padding: 30px;
+}
+
+footer {
+  background-color: var(--DARK_BLUE);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
 }
 
 .icons:hover {
   cursor: pointer;
-}
-
-#twitter {
-  left: 5px;
-}
-
-#facebook {
-  left: 10px;
 }
