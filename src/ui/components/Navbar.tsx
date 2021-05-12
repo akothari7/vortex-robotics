@@ -6,7 +6,7 @@ export const Navbar = () => {
       <div className="nav">
         <a href="/">Home</a>
         <a href="/about">About Us</a>
-        <a href="/">Outreach</a>
+        <a href="/outreach">Outreach</a>
         <a href="/">Donors</a>
         <a href="/">Achievements</a>
         <a href="/">Contact Us</a>

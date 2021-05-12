@@ -1,5 +1,7 @@
 import { HomePage } from "./pages/HomePage";
 import { AboutPage } from "./pages/AboutPage";
+import { OutreachPage } from "./pages/OutreachPage";
+
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -10,6 +12,9 @@ const App = () => {
         <Switch>
           <Route exact path="/about">
             <AboutPage />
+          </Route>
+          <Route exact path="/outreach">
+            <OutreachPage />
           </Route>
           <Route exact path="/">
             <HomePage />
