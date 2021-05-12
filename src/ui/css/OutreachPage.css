@@ -1,0 +1,29 @@
+.outreach-content {
+  text-align: center;
+  position: relative;
+  top: 50px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.outreach_p {
+  position: relative;
+  bottom: 30px;
+}
+
+.date {
+  color: var(--ACCENT);
+}
+
+.main-content {
+  position: relative;
+  top: 200px;
+}
+
+.header {
+  position: relative;
+  top: 50px;
+}
