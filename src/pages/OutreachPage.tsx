@@ -32,13 +32,15 @@ export const OutreachPage = () => {
             <LoremIpsum />
           </div>
 
-          <h1>
-            <Strong>2019-20</Strong> Season
-          </h1>
+          <div className="space">
+            <h1>
+              <Strong>2019-20</Strong> Season
+            </h1>
 
-          <div className="event">
-            <h2 className="date">January 2020</h2>
-            <LoremIpsum />
+            <div className="event">
+              <h2 className="date">January 2020</h2>
+              <LoremIpsum />
+            </div>
           </div>
         </div>
       </div>
