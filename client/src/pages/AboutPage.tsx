@@ -8,7 +8,7 @@ export const AboutPage = (): JSX.Element => {
   return (
     <div>
       <Navbar />
-      <div className="content">
+      <div className="about_content">
         <Bounce>
           <h1 className="title">What Are Our Goals?</h1>
         </Bounce>
@@ -16,6 +16,7 @@ export const AboutPage = (): JSX.Element => {
           <Fade>
             <GoalsParagraph />
           </Fade>
+          <h1 className="tm">Team Members</h1>
         </div>
       </div>
       <Footer />
