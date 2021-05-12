@@ -6,6 +6,7 @@ import logo from "../assets/logo.png";
 import downArrow from "../assets/down_arrow.png";
 import skystone from "../assets/skystone.png";
 import rover_ruckus from "../assets/rover_ruckus.png";
+import { Zoom, Roll, Bounce, Fade } from "react-reveal";
 
 export const HomePage = () => {
   return (
@@ -14,15 +15,21 @@ export const HomePage = () => {
       <div className="content">
         <div>
           <div className="container">
-            <img
-              loading="lazy"
-              src={logo}
-              className="img"
-              alt="Vortex Robotics"
-            />
+            <Zoom>
+              <img
+                loading="lazy"
+                src={logo}
+                className="img"
+                alt="Vortex Robotics"
+              />
+            </Zoom>
           </div>
-          <h1 className="title">Vortex Robotics</h1>
-          <h2 className="ftc">FTC 14969</h2>
+          <Roll>
+            <h1 className="title">Vortex Robotics</h1>
+          </Roll>
+          <Bounce>
+            <h2 className="ftc">FTC 14969</h2>
+          </Bounce>
           <a href="#who_are_we">
             <img
               src={downArrow}
@@ -34,8 +41,13 @@ export const HomePage = () => {
         </div>
         <hr className="hr" />
         <div className="main">
-          <h1 id="who_are_we">Who Are We?</h1>
-          <p className="home_p">{homepageParagraph}</p>
+          <Fade>
+            <h1 id="who_are_we">Who Are We?</h1>
+          </Fade>
+
+          <Fade>
+            <p className="home_p">{homepageParagraph}</p>
+          </Fade>
           <p className="more_info">
             For more information on FIRST and FTC, visit{" "}
             <a
@@ -49,38 +61,46 @@ export const HomePage = () => {
 
           <div className="challenge_container">
             <div>
-              <h2 className="challenge_text">FY19-20 Challenge</h2>
+              <Roll>
+                <h2 className="challenge_text">FY19-20 Challenge</h2>
+              </Roll>
+              <Fade>
+                <div className="flex-container">
+                  <div className="flex-child">
+                    <img src={skystone} alt="Skystone" width="500" />
+                  </div>
+                  <div className="flex-child">
+                    <iframe
+                      className="frame"
+                      width="710"
+                      height="428"
+                      src="https://www.youtube.com/embed/XiGB_8Ppnbs"
+                    ></iframe>
+                  </div>
+                </div>
+              </Fade>
+            </div>
+          </div>
+
+          <div className="challenge_2">
+            <Roll>
+              <h2 className="challenge_text">FY18-19 Challenge</h2>
+            </Roll>
+            <Fade>
               <div className="flex-container">
                 <div className="flex-child">
-                  <img src={skystone} alt="Skystone" width="500" />
+                  <img src={rover_ruckus} alt="Rover Ruckus" width="500" />
                 </div>
                 <div className="flex-child">
                   <iframe
                     className="frame"
                     width="710"
                     height="428"
-                    src="https://www.youtube.com/embed/XiGB_8Ppnbs"
+                    src="https://www.youtube.com/embed/rR4gR4l2XA8"
                   ></iframe>
                 </div>
               </div>
-            </div>
-          </div>
-
-          <div className="challenge_2">
-            <h2 className="challenge_text">FY18-19 Challenge</h2>
-            <div className="flex-container">
-              <div className="flex-child">
-                <img src={rover_ruckus} alt="Rover Ruckus" width="500" />
-              </div>
-              <div className="flex-child">
-                <iframe
-                  className="frame"
-                  width="710"
-                  height="428"
-                  src="https://www.youtube.com/embed/rR4gR4l2XA8"
-                ></iframe>
-              </div>
-            </div>
+            </Fade>
           </div>
         </div>
       </div>
