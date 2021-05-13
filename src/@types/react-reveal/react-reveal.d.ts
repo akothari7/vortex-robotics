@@ -4,4 +4,5 @@ declare module "react-reveal" {
   export const Flip: React.FC;
   export const Roll: React.FC;
   export const Bounce: React.FC;
+  export const Rotate: React.FC;
 }

@@ -2,6 +2,7 @@ import { HomePage } from "./pages/HomePage";
 import { AboutPage } from "./pages/AboutPage";
 import { OutreachPage } from "./pages/OutreachPage";
 import { SponsorPage } from "./pages/SponsorPage";
+import { AchievementsPage } from "./pages/AchievementsPage";
 
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -19,6 +20,9 @@ const App = () => {
           </Route>
           <Route exact path="/sponsors">
             <SponsorPage />
+          </Route>
+          <Route exact path="/achievements">
+            <AchievementsPage />
           </Route>
           <Route exact path="/">
             <HomePage />
