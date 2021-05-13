@@ -16,6 +16,7 @@ html {
 :root {
   --DARK_BLUE: #2d6cbf;
   --ACCENT: #27a4ff;
+  --ACCENT_HOVER: #5ebbff;
   --PURE_WHITE: #ffffff;
   --BACKGROUND: #255697;
 }

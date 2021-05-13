@@ -3,6 +3,7 @@ import { AboutPage } from "./pages/AboutPage";
 import { OutreachPage } from "./pages/OutreachPage";
 import { SponsorPage } from "./pages/SponsorPage";
 import { AchievementsPage } from "./pages/AchievementsPage";
+import { ContactUsPage } from "./pages/ContactUsPage";
 
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -23,6 +24,9 @@ const App = () => {
           </Route>
           <Route exact path="/achievements">
             <AchievementsPage />
+          </Route>
+          <Route exact path="/contact">
+            <ContactUsPage />
           </Route>
           <Route exact path="/">
             <HomePage />
