@@ -1,5 +1,6 @@
 import "../ui/css/OutreachPage.css";
 import { Navbar } from "../ui/components/Navbar";
+import { Footer } from "../ui/components/Footer";
 import { LoremIpsum } from "../ui/utils/Paragraphs";
 import { Strong } from "../ui/utils/Strong";
 import blank from "../assets/white_background.png";
@@ -63,6 +64,7 @@ export const OutreachPage = () => {
           </Fade>
         </div>
       </div>
+      <Footer style={{ position: "relative", top: "22rem" }} />
     </div>
   );
 };

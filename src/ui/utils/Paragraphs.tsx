@@ -1,3 +1,4 @@
+import { CSSProperties } from "react";
 import { Strong } from "./Strong";
 
 export const HomePageParagraph = () => {
@@ -32,9 +33,11 @@ export const GoalsParagraph = () => {
 };
 
 export const LoremIpsum = () => {
+  const styles: CSSProperties = { padding: "1px 20rem", fontSize: "20px" };
+
   return (
     <div>
-      <p className="home_p">
+      <p style={styles}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -42,6 +45,27 @@ export const LoremIpsum = () => {
         velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum.
+      </p>
+    </div>
+  );
+};
+
+export const Achievement = () => {
+  return (
+    <div>
+      <p style={{ fontSize: "20px" }}>
+        In the Onshape Robots to the Rescue competition, competing teams were
+        required to CAD a robot that would solve a major world issue. Our team
+        chose to target the issue of the inefficient and wasteful system of
+        delivering medications to patients in hospitals. (Please see the Robot
+        Design sub-page under the About Us page to view more details about the
+        robot we designed). We partnered with Team Apollo to form an alliance,
+        where they would focus on disinfecting our delivery robot. Out of the
+        total of 151 teams entered in the competition, our team was ranked #32.
+        Considering this was most of the members' first time CADing, this
+        ranking is impressive, and we learned a lot from this experience! Our
+        team will continue with learning to use CAD to design our robot, and we
+        look forward to what we can do with it in the future!
       </p>
     </div>
   );

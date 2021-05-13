@@ -1,6 +1,5 @@
 import "../ui/css/AboutPage.css";
 import { Navbar } from "../ui/components/Navbar";
-import { Footer } from "../ui/components/Footer";
 import { GoalsParagraph } from "../ui/utils/Paragraphs";
 import { Fade, Bounce } from "react-reveal";
 
