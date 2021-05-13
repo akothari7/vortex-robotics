@@ -1,5 +1,6 @@
 import "../ui/css/SponsorPage.css";
 import { FlexContainer } from "../ui/components/FlexContainer";
+import { Strong } from "../ui/utils/Strong";
 import { Navbar } from "../ui/components/Navbar";
 import { Footer } from "../ui/components/Footer";
 import digitalOcean from "../assets/digitalocean.png";
@@ -16,8 +17,9 @@ export const SponsorPage = () => {
       </Bounce>
       <Fade>
         <p>
-          We are proud to be sponsored by DigitalOcean, Apple, and GitHub, and
-          have received smaller donations as well.
+          We are proud to be sponsored by <Strong>DigitalOcean</Strong>,{" "}
+          <Strong>Apple</Strong>, and <Strong>GitHub</Strong>, and have received
+          smaller donations as well.
         </p>
       </Fade>
       <div className="cards">
